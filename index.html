@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <title>VLXEN</title>
+    <link rel="icon" href="imagenes/xenlogo.png" type="image/png">
+    <link rel="stylesheet" href="xenStyle.css">
+    <script src="./node_modules/web3/dist/web3.min.js"></script>
+    <script src="./index.js"></script>
+  </head>
+
+  <body class="container">
+   <div class="contenido">
+    <div id="dashboard">
+      <label class="gRank1" >Global Rank: </label><label id="gRank">  </label><br>
+      <label class="gRank1" >Liquid Supply: </label><label id="liquid">  </label>
+    </div>
+
+<input type="button" id="conectar" value="Conectar">
+  <label> VLX :</label><label> <label id="balancevlx"></label> <<< --------- >>> </label><label> vlXEN :</label><label id="balancevlxen"></label>
+  <br>
+  
+  <label id="Lterm">Term: </label>
+  <input id="term" type="text"  size="1.8">
+  <button  type="button" onclick="Mint()" id="bmint">Mint</button><br>
+  <input  id="claimr" type="button" value="Claim Rewards" onclick="ClaimRewards()"><label id="countdown"></label><br>
+  <input  id="claimr" type="button" value="Claim&Share " onclick="ClaimShare()"><input id="textShare" type="text"  size="36" value="Put Wallet to Share" onclick="Limpiar()">
+  <input id="textPorcent" type="text"  size="3" value="100" onclick="Limpiar()"><label>%</label><br>
+  <input  id="claimr" type="button" value="Claim&Stake " onclick="ClaimShare()"><input  id="textStakePct" type="text"  size="3" value="100"><label>%</label>
+  <input title="Term" id="textStakeTerm" type="text"  size="3" value=""><br>
+  <input  id="claimr" type="button" value="Stake" onclick="Stake()"><input id="amountStake" type="text"  size="9" value="amount to stake" onclick="Limpiar()">
+  <input id="termStake" type="text"  size="3" value="term" >
+  <label id="userstaked1" class="gRank1" >vlXEN Staked: </label><label id="userstaked">  </label>
+  <input  id="claimStaked" type="button" value="Claim Staked" onclick="ClaimStaked()"><br>
+  
+
+
+</div>
+    
+
+  </body>
+</html>
